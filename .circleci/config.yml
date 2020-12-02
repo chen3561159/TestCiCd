@@ -13,7 +13,7 @@ jobs:
         name: Get all dependencies
         command: |
           export GO111MODULE=on
-          export GOPROXY="https://goproxy.cn,direct"
+          export GOPROXY="https://goproxy.cn"
           go get -v ./...
           go get -u github.com/onsi/ginkgo/ginkgo
           go get -u github.com/onsi/gomega/...
